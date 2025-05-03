@@ -11,7 +11,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class QualifierTest {
 
     @Autowired
-    @Qualifier(value = "labtop")
+    @Qualifier(value = "labtop") // 같은 타입의 Bean이 여러 개일 때, 그 중 어떤 걸 주입할지 명시적으로 지정하는 어노테이션
+                                // Qualifier는 이 주입 대상에 대해 설명하는 것이다.
+                                // 이 필드에 어떤 Bean을 주입할지 정하는 거니까 주입 대상 옆에 사용해야 한다.
     private Computer computer;
 
     @Test

@@ -8,10 +8,7 @@ import org.springframework.stereotype.Component;
 @Data
 public class Coding {
 
-
-
     @Autowired
     private Computer computer;
 }
-
 
